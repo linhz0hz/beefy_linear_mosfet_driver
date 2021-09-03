@@ -122,6 +122,50 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_D
+#
+DEF Device_D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Zener
+#
+DEF Device_D_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_Zener" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Q_NPN_BCE
 #
 DEF Device_Q_NPN_BCE Q 0 0 Y N 1 F N
@@ -178,26 +222,6 @@ P 2 0 1 0 0 -20 0 -50 N
 X A 1 -250 0 100 R 50 50 1 1 P
 X C 2 0 -150 100 U 50 50 1 1 I
 X B 3 250 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Reference_Voltage_TL431DBZ
-#
-DEF Reference_Voltage_TL431DBZ U 0 20 N N 1 F N
-F0 "U" -100 100 50 H V C CNN
-F1 "Reference_Voltage_TL431DBZ" 0 -100 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 -150 50 H I C CIN
-F3 "" 0 0 50 H I C CIN
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-P 3 0 1 0 -50 0 0 0 50 0 N
-P 3 0 1 0 -30 30 30 0 -30 -30 F
-P 4 0 1 10 20 -40 30 -30 30 30 30 30 N
-X K 1 100 0 100 L 50 50 1 1 P
-X REF 2 0 100 100 D 50 50 1 1 P
-X A 3 -100 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
